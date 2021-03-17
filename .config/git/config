@@ -1,0 +1,8 @@
+[user]
+	email = jacob.bachmann@posteo.de
+[pull]
+	rebase = false
+[init]
+	defaultBranch = master
+[commit]
+	gpgsign = true
