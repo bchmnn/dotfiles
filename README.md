@@ -1,14 +1,10 @@
 # Dotfiles
 
-Because cool kids now have a dotfiles repo.
-
 ## Setup
-### Mac
-* `homebrew`
 
-### Windoof
-* `chocolatey`
-* `scoop`
+|Mac|Windoof|
+|-|-|
+|`homebrew`|`chocolatey` `scoop`|
 
 ## Setup virgin machine
 
