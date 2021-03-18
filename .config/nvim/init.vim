@@ -21,6 +21,8 @@ set expandtab                   " convert tabs to white space
 set shiftwidth=8                " width for autoindents
 set softtabstop=8               " see multiple spaces as tabstops
 
+autocmd Filetype yaml setlocal ts=2 sw=2 expandtab
+
 " == Coc Config ==
 
 set hidden                      " coc: TextEdit might fail if hidden is not set
