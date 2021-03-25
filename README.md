@@ -47,7 +47,8 @@ at startup.
 ```powershell
 & $(scoop which gpgconf) --launch gpg-agent
 ```
-⚠️  use this current symlink of the scoop dir.
+⚠️  `scoop which` returns the dir of the latest version. Use scoops `current`
+symlink that always refers to the latest version. ⚠️
 
 ## Font
 [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf)
