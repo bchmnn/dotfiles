@@ -41,10 +41,13 @@ Link init.vim and profile.ps1 to their respecitve locations. Full path needed. C
 mklink C:\Users\<user>\AppData\Local\nvim\init.vim C:\Users\<user>\.config\nvim\init.vim
 mklink C:\Users\<user>\Documents\PowerShell\profile.ps1 C:\Users\<user>\.config\PowerShell\profile.ps1
 ```
+
 Add a scheduled task to automatically start the gpg-agent
 at startup.
-`$(scoop which gpgconf) --version`
-Note: use this current symlink of the scoop dir.
+```powershell
+& $(scoop which gpgconf) --launch gpg-agent
+```
+⚠️ : use this current symlink of the scoop dir.
 
 ## Font
 [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf)
