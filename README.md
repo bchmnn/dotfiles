@@ -36,10 +36,11 @@ dotfiles config --local status.showUntrackedFiles no
 
 ## Post setup
 ### Windoof
-Link init.vim and profile.ps1 to their respecitve locations. Full path needed. Cmd needed.
+Link some config files to their respective locations. Full path and `Command Prompt` obligatory.
 ```console
 mklink C:\Users\<user>\AppData\Local\nvim\init.vim C:\Users\<user>\.config\nvim\init.vim
 mklink C:\Users\<user>\Documents\PowerShell\profile.ps1 C:\Users\<user>\.config\PowerShell\profile.ps1
+mklink C:\Users\<user>\AppData\Local\Packages\Microsoft.WindowsTerminal_<id>\LocalState\settings.json C:\Users\<user>\.config\WindowsTerminal\settings.json
 ```
 
 Add a scheduled task to automatically start the gpg-agent
@@ -47,8 +48,8 @@ at startup.
 ```powershell
 & $(scoop which gpgconf) --launch gpg-agent
 ```
-⚠️  `scoop which` returns the dir of the latest version. Use scoops `current`
-symlink that always refers to the latest version. ⚠️
+⚠️  `scoop which` returns the dir of the latest version. Use scoop's `current`
+symlink that always refers to the latest version.
 
 ## Font
 [Fira Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/blob/master/patched-fonts/FiraCode/Regular/complete/Fira%20Code%20Regular%20Nerd%20Font%20Complete%20Mono%20Windows%20Compatible.ttf)
